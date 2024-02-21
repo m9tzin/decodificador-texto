@@ -1,27 +1,37 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Decodificador de Texto</title>
 </head>
 <body>
-    <header class="cabecalho"></header>
-    <main class="conteudo">
-        <div class="container__conteudo>">
-            <div class="container__informacoes">
-                <a type="text" class="informacoes">Apenas letras minúsculas e sem acento.</a>
-                <div class="container__texto">
-                    <textarea id="texto" name="texto" rows="20" cols="60">Digite seu texto</textarea>
-                </div>
-                <div class="container__botoes">
-                    <button class="criptografar" id="criptografar">Criptografar</button>
-                    <button class="descriptografar id="descriptografar">Descriptografar</button>
-                </div>
-                <div class="container__resultado"></div>
+    <header></header>
+    <main>
+        <section>
+            <div class="inputTexto">
+                <textarea id="texto-descriptografar" cols="40" rows="10" placeholder="Insira seu texto"></textarea>
             </div>
-        </div>
+            <div class="alert">
+                <a type="text" class="instruction">Apenas letras minúsculas e sem acentos.</a>
+            </div>
+            <div class="buttons">
+                <button onclick="criptografar()" class="btn-criptografar" id="criptografar">Criptografar</button>
+                <button onclick="descriptografar()" class="btn-descriptografar" id="descriptografar">Descriptografar</button>
+            </div>
+        </section>
+        <aside>
+            <div class="painelTexto">
+                <textarea id="conteudo-texto" cols="20" rows="30"></textarea>
+                <button onclick="copiar()" class="btn-copiar">Copiar</button>
+            </div>
+            <div class="inicioPainel">
+                <h3>Nenhuma mensagem encontrada</h3>
+                <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+        </aside>
     </main>
     <footer></footer>
+    
 </body>
 </html>
