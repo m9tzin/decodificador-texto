@@ -1,37 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Decodificador de Texto</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/style.css">
+  <title>Decodificador de Texto</title>
 </head>
+
 <body>
-    <header></header>
-    <main>
-        <section>
-            <div class="inputTexto">
-                <textarea id="texto-descriptografar" cols="40" rows="10" placeholder="Insira seu texto"></textarea>
-            </div>
-            <div class="alert">
-                <a type="text" class="instruction">Apenas letras minúsculas e sem acentos.</a>
-            </div>
-            <div class="buttons">
-                <button onclick="criptografar()" class="btn-criptografar" id="criptografar">Criptografar</button>
-                <button onclick="descriptografar()" class="btn-descriptografar" id="descriptografar">Descriptografar</button>
-            </div>
-        </section>
-        <aside>
-            <div class="painelTexto">
-                <textarea id="conteudo-texto" cols="20" rows="30"></textarea>
-                <button onclick="copiar()" class="btn-copiar">Copiar</button>
-            </div>
-            <div class="inicioPainel">
-                <h3>Nenhuma mensagem encontrada</h3>
-                <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
-            </div>
-        </aside>
-    </main>
-    <footer></footer>
-    
+  <header></header>
+  <main>
+    <section>
+      <div class="inputTexto">
+        <textarea id="texto-descriptografar" cols="40" rows="10" placeholder="Insira seu texto"></textarea>
+      </div>
+      <div class="alert">
+        <a type="text" class="instruction">Apenas letras minúsculas e sem acentos.</a>
+      </div>
+      <div class="buttons">
+        <button onclick="criptografar()" class="btn-criptografar" id="criptografar">Criptografar</button>
+        <button onclick="descriptografar()" class="btn-descriptografar" id="descriptografar">Descriptografar</button>
+      </div>
+    </section>
+    <aside>
+      <div class="painelTexto">
+        <textarea id="conteudo-texto" cols="20" rows="30"></textarea>
+        <button onclick="copiar()" class="btn-copiar">Copiar</button>
+      </div>
+      <div class="inicioPainel">
+        <h3>Nenhuma mensagem encontrada</h3>
+        <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+      </div>
+    </aside>
+  </main>
+  <footer>
+    <section>
+      <p>Desenvolvido por @m9tzin</p>
+    </section>
+  </footer>
+
 </body>
+
 </html>
